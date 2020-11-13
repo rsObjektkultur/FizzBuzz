@@ -13,5 +13,11 @@ namespace FizzBuzzUnitTests
         {
             Program.PrintFizzBuzz(i);
         }
+
+        [Test]
+        public void Test2()
+        {
+            Program.Main();
+        }
     }
 }
