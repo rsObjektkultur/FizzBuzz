@@ -9,12 +9,13 @@ namespace FizzBuzz
         {
             for (int i = 1; i <= 100; i++)
             {
-                PrintFizzBuzz(i);
+                var temp = SayFizzBuzz(i);
+                Console.WriteLine(temp);
                 Thread.Sleep(50);
             }
         }
 
-        public static void PrintFizzBuzz(int i)
+        public static string SayFizzBuzz(int i)
         {
             var output = string.Empty;
 
@@ -27,7 +28,7 @@ namespace FizzBuzz
             if (string.IsNullOrEmpty(output))
                 output = i.ToString();
 
-            Console.WriteLine(output);
+            return output;
         }
     }
 }

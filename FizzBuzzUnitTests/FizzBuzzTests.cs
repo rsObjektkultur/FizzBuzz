@@ -10,7 +10,7 @@ namespace FizzBuzzUnitTests
         [TestCase(5)]
         public void PrintFizzBuzzTest(int i)
         {
-            Program.PrintFizzBuzz(i);
+            Program.SayFizzBuzz(i);
         }
 
         [Test]
