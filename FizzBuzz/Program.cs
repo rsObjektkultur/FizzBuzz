@@ -18,11 +18,11 @@ namespace FizzBuzz
         {
             var output = string.Empty;
 
-            if (i % 3 == 0)
-                output += "Fizz";
+            if (i % 4 == 0)
+                output += "Fazz";
 
             if (i % 5 == 0)
-                output += "Buzz";
+                output = "Buzz";
 
             if (string.IsNullOrEmpty(output))
                 output = i.ToString();
