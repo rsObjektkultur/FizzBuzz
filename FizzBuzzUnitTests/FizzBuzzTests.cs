@@ -1,21 +1,20 @@
-
 using FizzBuzz;
 using NUnit.Framework;
 
 namespace FizzBuzzUnitTests
 {
-    public class Tests
+    public class FizzBussTests
     {
         [TestCase(1)]
         [TestCase(3)]
         [TestCase(5)]
-        public void Test1(int i)
+        public void PrintFizzBuzzTest(int i)
         {
             Program.PrintFizzBuzz(i);
         }
 
         [Test]
-        public void Test2()
+        public void MainMethodTest()
         {
             Program.Main();
         }
